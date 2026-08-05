@@ -1,0 +1,764 @@
+/* =====================================================
+                    CONTACT
+===================================================== */
+
+.contact{
+    padding:140px 0 0;
+}
+
+.contact .container{
+    width:min(1200px,90%);
+    margin:auto;
+}
+
+/* =====================================================
+                CONTACT HEADER
+===================================================== */
+
+.contact-header{
+
+    max-width:760px;
+
+    margin:0 auto 5rem;
+
+    text-align:center;
+
+}
+
+.contact-header .section-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:.65rem;
+
+    padding:.55rem 1rem;
+
+    border-radius:999px;
+
+    background:#EEF4FF;
+
+    color:#2563EB;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    letter-spacing:.15rem;
+
+    text-transform:uppercase;
+
+}
+
+.contact-header .section-tag::before{
+
+    content:"";
+
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+}
+
+.contact-header h2{
+
+    margin:1.6rem 0;
+
+    font-size:clamp(2.8rem,5vw,4.5rem);
+
+    line-height:1.05;
+
+    letter-spacing:-.05em;
+
+    color:#111827;
+
+}
+
+.contact-header p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#64748B;
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+
+}
+
+/* =====================================================
+                    CONTACT CARD
+===================================================== */
+
+.contact-card{
+
+    display:grid;
+
+    grid-template-columns:1.3fr .7fr;
+
+    gap:3rem;
+
+    align-items:center;
+
+    padding:4rem;
+
+    border-radius:32px;
+
+    background:linear-gradient(
+        135deg,
+        #FFFFFF,
+        #F8FAFC
+    );
+
+    border:1px solid #E5E7EB;
+
+    box-shadow:
+        0 30px 60px rgba(15,23,42,.05);
+
+    margin-bottom:5rem;
+
+}
+
+.contact-label{
+
+    display:inline-block;
+
+    margin-bottom:1rem;
+
+    padding:.45rem .9rem;
+
+    border-radius:999px;
+
+    background:#EEF4FF;
+
+    color:#2563EB;
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08rem;
+
+}
+
+.contact-text h3{
+
+    margin:0;
+
+    font-size:clamp(2rem,4vw,3rem);
+
+    line-height:1.2;
+
+    color:#111827;
+
+}
+
+.contact-text p{
+
+    margin-top:1.5rem;
+
+    color:#64748B;
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+
+}
+
+/* =====================================================
+                CONTACT BUTTONS
+===================================================== */
+
+.contact-actions{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1rem;
+
+}
+
+.contact-actions a{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:1rem;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.contact-actions .primary-btn{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+.contact-actions .primary-btn:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-4px);
+
+}
+
+.contact-actions .secondary-btn{
+
+    background:white;
+
+    color:#111827;
+
+    border:1px solid #CBD5E1;
+
+}
+
+.contact-actions .secondary-btn:hover{
+
+    border-color:#2563EB;
+
+    color:#2563EB;
+
+    transform:translateY(-4px);
+
+}
+
+/* =====================================================
+                SOCIAL SECTION
+===================================================== */
+
+.social-section{
+
+    margin-bottom:6rem;
+
+}
+
+.social-section h4{
+
+    margin-bottom:2rem;
+
+    font-size:1.4rem;
+
+    color:#111827;
+
+}
+
+/* =====================================================
+                SOCIAL GRID
+===================================================== */
+
+.social-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(250px,1fr));
+
+    gap:1.5rem;
+
+}
+
+.social-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+    padding:1.5rem;
+
+    border-radius:22px;
+
+    background:white;
+
+    border:1px solid #E5E7EB;
+
+    text-decoration:none;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.social-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#2563EB;
+
+    box-shadow:
+        0 20px 40px rgba(15,23,42,.08);
+
+}
+
+/* =====================================================
+                SOCIAL ICON
+===================================================== */
+
+.social-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#EEF4FF;
+
+    color:#2563EB;
+
+    transition:.35s;
+
+}
+
+.social-card:hover .social-icon{
+
+    background:#2563EB;
+
+    color:white;
+
+    transform:rotate(-8deg);
+
+}
+
+.social-card h5{
+
+    margin:0;
+
+    font-size:1rem;
+
+    color:#111827;
+
+}
+
+.social-card span{
+
+    display:block;
+
+    margin-top:.35rem;
+
+    color:#64748B;
+
+    font-size:.95rem;
+
+}
+/* =====================================================
+                        FOOTER
+===================================================== */
+
+.footer{
+
+    margin-top:2rem;
+
+    padding-top:4rem;
+
+    border-top:1px solid #E5E7EB;
+
+}
+
+.footer-container{
+
+    width:min(1200px,90%);
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:3rem;
+
+    padding-bottom:3rem;
+
+}
+
+.footer-brand h3{
+
+    margin:0 0 .75rem;
+
+    font-size:1.8rem;
+
+    color:#111827;
+
+    letter-spacing:-.03em;
+
+}
+
+.footer-brand p{
+
+    max-width:320px;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    gap:2rem;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+    color:#64748B;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s ease;
+
+}
+
+.footer-links a:hover{
+
+    color:#2563EB;
+
+}
+
+/* =====================================================
+                    BACK TO TOP
+===================================================== */
+
+.back-to-top{
+
+    padding:.95rem 1.5rem;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#111827;
+
+    color:#FFFFFF;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:
+        transform .35s ease,
+        background .35s ease;
+
+}
+
+.back-to-top:hover{
+
+    background:#2563EB;
+
+    transform:translateY(-4px);
+
+}
+
+/* =====================================================
+                    FOOTER BOTTOM
+===================================================== */
+
+.footer-bottom{
+
+    width:min(1200px,90%);
+    margin:auto;
+
+    padding:2rem 0;
+
+    border-top:1px solid #E5E7EB;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:1rem;
+
+}
+
+.footer-bottom p{
+
+    margin:0;
+
+    color:#64748B;
+
+}
+
+.footer-bottom span{
+
+    color:#94A3B8;
+
+    font-size:.95rem;
+
+}
+
+/* =====================================================
+                    ANIMATIONS
+===================================================== */
+
+.contact-header{
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+.contact-card{
+
+    animation:fadeUp 1s ease forwards;
+
+}
+
+.social-card{
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+.social-card:nth-child(2){
+
+    animation-delay:.15s;
+
+}
+
+.social-card:nth-child(3){
+
+    animation-delay:.3s;
+
+}
+
+.social-card:nth-child(4){
+
+    animation-delay:.45s;
+
+}
+
+.footer{
+
+    animation:fadeUp 1s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =====================================================
+                    TABLET
+===================================================== */
+
+@media(max-width:900px){
+
+.contact{
+
+padding:100px 0 0;
+
+}
+
+.contact-card{
+
+grid-template-columns:1fr;
+
+padding:3rem;
+
+text-align:center;
+
+}
+
+.contact-actions{
+
+width:100%;
+
+}
+
+.footer-container{
+
+flex-direction:column;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+.footer-brand p{
+
+max-width:500px;
+
+}
+
+.footer-links{
+
+justify-content:center;
+
+}
+
+.footer-bottom{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+}
+
+/* =====================================================
+                    MOBILE
+===================================================== */
+
+@media(max-width:768px){
+
+.contact-header{
+
+margin-bottom:4rem;
+
+}
+
+.contact-header h2{
+
+font-size:2.5rem;
+
+}
+
+.contact-card{
+
+padding:2.5rem;
+
+}
+
+.contact-text h3{
+
+font-size:2rem;
+
+}
+
+.social-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-actions a{
+
+width:100%;
+
+}
+
+.back-to-top{
+
+width:100%;
+
+}
+
+}
+
+/* =====================================================
+                SMALL MOBILE
+===================================================== */
+
+@media(max-width:500px){
+
+.contact{
+
+padding:80px 0 0;
+
+}
+
+.contact-header h2{
+
+font-size:2rem;
+
+}
+
+.contact-text h3{
+
+font-size:1.7rem;
+
+}
+
+.contact-card{
+
+padding:2rem 1.5rem;
+
+border-radius:24px;
+
+}
+
+.social-card{
+
+padding:1.2rem;
+
+}
+
+.social-icon{
+
+width:52px;
+height:52px;
+
+}
+
+.footer-brand h3{
+
+font-size:1.5rem;
+
+}
+
+.footer-links{
+
+gap:1rem;
+
+}
+
+.footer-bottom{
+
+padding:1.5rem 0;
+
+}
+
+}

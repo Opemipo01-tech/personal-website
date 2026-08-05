@@ -5,6 +5,7 @@
 .about{
 
     padding:100px 0;
+    border: 1px solid black;
     
 }
 
@@ -300,5 +301,118 @@ width:48px;
 height:48px;
 
 }
+
+}
+
+/* ===================================
+        ANIMATION SETUP
+=================================== */
+
+.about-content,
+.fact-card {
+    opacity: 0;
+}
+
+/* Left content */
+
+.about-content {
+    animation: slideLeft 0.9s cubic-bezier(.22,1,.36,1) forwards;
+}
+
+/* Staggered cards */
+
+.fact-card:nth-child(1) {
+    animation: slideRight 0.8s cubic-bezier(.22,1,.36,1) forwards;
+    animation-delay: .2s;
+}
+
+.fact-card:nth-child(2) {
+    animation: slideRight 0.8s cubic-bezier(.22,1,.36,1) forwards;
+    animation-delay: .4s;
+}
+
+.fact-card:nth-child(3) {
+    animation: slideRight 0.8s cubic-bezier(.22,1,.36,1) forwards;
+    animation-delay: .6s;
+}
+
+.fact-card:nth-child(4) {
+    animation: slideRight 0.8s cubic-bezier(.22,1,.36,1) forwards;
+    animation-delay: .8s;
+}
+
+/* Icon hover */
+
+.fact-icon {
+    transition:
+        transform .35s ease,
+        background .35s ease;
+}
+
+.fact-card:hover .fact-icon {
+    transform: rotate(-8deg) scale(1.08);
+    background: #2563EB;
+    color: white;
+}
+
+/* Heading animation */
+
+.about h2 {
+    overflow: hidden;
+}
+
+.about h2 {
+    animation: fadeUp .9s cubic-bezier(.22,1,.36,1) forwards;
+}
+
+/* Paragraph animation */
+
+.about p {
+    animation: fadeUp 1s cubic-bezier(.22,1,.36,1) forwards;
+}
+
+/* ===================================
+        KEYFRAMES
+=================================== */
+
+@keyframes slideLeft {
+
+    from {
+        opacity: 0;
+        transform: translateX(-70px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes slideRight {
+
+    from {
+        opacity: 0;
+        transform: translateX(70px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
 }

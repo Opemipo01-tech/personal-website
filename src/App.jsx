@@ -1,6 +1,7 @@
-import './App.css'
 import Home from './Pages/home'
 import About from './components/About'
+import Projects from './components/Projects'
+import Contact from './components/contact'
 
 function App() {
   
@@ -9,6 +10,8 @@ function App() {
     <>
     <Home/>
     <About/>
+    <Projects/>
+    <Contact/>
     </>
   )
 }
