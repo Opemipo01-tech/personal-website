@@ -1,0 +1,183 @@
+
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding-left: 150px;
+}
+
+/* Small Heading */
+
+.hero h2 {
+  margin: 0;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+
+  color: #2563eb;
+}
+
+/* Main Heading */
+
+.hero h1 {
+
+  margin: 0;
+
+  max-width: 900px;
+
+  font-size: clamp(3rem, 8vw, 6.5rem);
+
+  line-height: 1.05;
+
+  letter-spacing: -0.06em;
+
+  font-weight: 800;
+
+  background: linear-gradient(
+      135deg,
+      #0f172a,
+      #2563eb 55%,
+      #7c3aed
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Description */
+
+.hero p {
+
+  margin: 0;
+
+  max-width: 650px;
+
+  font-size: 1.15rem;
+
+  line-height: 1.9;
+
+  color: #475569;
+}
+
+/* Buttons */
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: .5rem;
+}
+
+.primary-btn,
+.secondary-btn {
+
+  padding: 1rem 2rem;
+
+  border-radius: 999px;
+
+  font-size: .95rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+/* Primary */
+
+.primary-btn {
+
+  border: none;
+
+  color: white;
+
+  background: linear-gradient(
+      135deg,
+      #2563eb,
+      #7c3aed
+  );
+}
+
+.primary-btn:hover {
+
+  transform: translateY(-4px);
+
+  box-shadow:
+      0 12px 35px rgba(37,99,235,.35);
+}
+
+/* Secondary */
+
+.secondary-btn {
+
+  background: white;
+
+  color: #2563eb;
+
+  border: 1px solid rgba(37,99,235,.25);
+}
+
+.secondary-btn:hover {
+
+  transform: translateY(-4px);
+
+  background: rgba(37,99,235,.08);
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero .container{
+
+align-items:center;
+
+padding-left:0;
+
+}
+
+.hero h1{
+
+font-size:clamp(2.8rem,12vw,4.5rem);
+
+}
+
+.hero p{
+
+font-size:1rem;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+width:100%;
+max-width:320px;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+width:100%;
+
+}
+
+}
