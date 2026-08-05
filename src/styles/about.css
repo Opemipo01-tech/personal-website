@@ -1,0 +1,304 @@
+/* ===================================
+            ABOUT
+=================================== */
+
+.about{
+
+    padding:100px 0;
+    
+}
+
+.about-container{
+    
+    width:min(1200px,90%);
+    margin:auto;
+    
+    display:grid;
+    
+    grid-template-columns:1.2fr .8fr;
+    
+    gap:6rem;
+    
+    align-items:start;
+    
+}
+
+/* ============================
+        LEFT
+============================ */
+
+.about-content{
+    
+    animation:fadeLeft 1s ease;
+    
+}
+
+.section-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+    
+    gap:.6rem;
+
+    padding:.45rem 1rem;
+
+    border-radius:999px;
+
+    background:#EEF4FF;
+    
+    color:#2563EB;
+    
+    font-size:.85rem;
+    
+    font-weight:600;
+    
+    letter-spacing:.12rem;
+    
+    text-transform:uppercase;
+    
+}
+
+.section-tag::before{
+
+    content:"";
+
+    width:8px;
+    height:8px;
+    
+    border-radius:50%;
+    
+    background:#2563EB;
+    
+}
+
+.about h2{
+
+    margin:1.5rem 0;
+    
+    font-size:clamp(2.5rem,5vw,4rem);
+    
+    line-height:1.1;
+
+    letter-spacing:-.05em;
+
+    color:#111827;
+
+}
+
+.about p{
+
+    margin-bottom:1.5rem;
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+    
+    color:#64748B;
+
+    max-width:650px;
+
+}
+
+/* ============================
+        FACTS
+============================ */
+
+.about-facts{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.2rem;
+    
+}
+
+.fact-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+    padding:1.3rem;
+
+    border:1px solid #E5E7EB;
+    
+    border-radius:18px;
+
+    background:white;
+
+    transition:.35s;
+
+    animation:fadeUp .8s ease;
+
+}
+
+.fact-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#2563EB;
+
+    box-shadow:0 18px 35px rgba(37,99,235,.08);
+
+}
+
+/* ============================
+        ICON
+============================ */
+
+.fact-icon{
+
+    width:55px;
+    height:55px;
+
+    flex-shrink:0;
+
+    border-radius:16px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    background:#EEF4FF;
+
+    color:#2563EB;
+
+    font-size:1.3rem;
+
+}
+
+.fact-card h4{
+
+    margin:0 0 .3rem;
+
+    color:#111827;
+
+    font-size:1rem;
+
+}
+
+.fact-card p{
+
+    margin:0;
+
+    font-size:.95rem;
+
+    color:#64748B;
+
+}
+
+/* ============================
+        ANIMATIONS
+============================ */
+
+@keyframes fadeLeft{
+
+from{
+
+opacity:0;
+
+transform:translateX(-40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+/* ============================
+        RESPONSIVE
+============================ */
+
+@media(max-width:1000px){
+
+.about-container{
+
+grid-template-columns:1fr;
+
+gap:4rem;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.about{
+
+padding:90px 0;
+
+}
+
+.about h2{
+
+font-size:2.5rem;
+
+}
+
+.about-facts{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.about{
+
+padding:70px 0;
+
+}
+
+.about h2{
+
+font-size:2rem;
+
+}
+
+.fact-card{
+
+padding:1rem;
+
+}
+
+.fact-icon{
+
+width:48px;
+height:48px;
+
+}
+
+}
