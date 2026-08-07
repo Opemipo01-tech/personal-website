@@ -1,5 +1,10 @@
 import "../styles/about.css";
 
+import Location from "../assets/location.png"
+import Education from "../assets/graduation.png"
+import Goal from "../assets/goal.png"
+import Avalaible from "../assets/available.png"
+
 function About() {
   return (
     <section id="about" className="about">
@@ -41,7 +46,11 @@ function About() {
           <div className="fact-card">
 
             <div className="fact-icon">
-              {/* Icon */}
+                <img
+              src={Location}
+              alt="location"
+            />
+
             </div>
 
             <div>
@@ -57,7 +66,11 @@ function About() {
           <div className="fact-card">
 
             <div className="fact-icon">
-              {/* Icon */}
+                <img
+              src={Education}
+              alt="Graduation"
+            />
+
             </div>
 
             <div>
@@ -73,7 +86,11 @@ function About() {
           <div className="fact-card">
 
             <div className="fact-icon">
-              {/* Icon */}
+                <img
+              src={Goal}
+              alt="Target"
+            />
+
             </div>
 
             <div>
@@ -89,7 +106,11 @@ function About() {
           <div className="fact-card">
 
             <div className="fact-icon">
-              {/* Icon */}
+                <img
+              src={Avalaible}
+              alt="Availability"
+            />
+
             </div>
 
             <div>

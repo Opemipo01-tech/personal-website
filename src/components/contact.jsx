@@ -1,5 +1,11 @@
 import "../styles/contact.css";
 
+ import Email from "../assets/mail.png";
+ import Resume from "../assets/curriculum.png"
+ import X from "../assets/twitter.png"
+ import LinkedIn from "../assets/linkedin.png"
+ import Github from "../assets/github.png"
+
 function Contact() {
   return (
     <section id="contact" className="contact">
@@ -57,22 +63,30 @@ function Contact() {
           <div className="contact-actions">
 
             <a
-              href="mailto:your@email.com"
+              href="mailto:ahmad21mahmud@gmail.com"
               className="primary-btn"
             >
-              {/* Email Icon */}
+                <img
+              src={Email}
+              alt="Mail"
+            />
+
 
               Send Email
 
             </a>
 
             <a
-              href="#"
+              href="https://flowcv.com/resume/cmtf3t6l54bb"
               className="secondary-btn"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {/* Resume Icon */}
+                <img
+              src={Resume}
+              alt="Resume"
+            />
+
 
               Download Resume
 
@@ -95,14 +109,18 @@ function Contact() {
           <div className="social-grid">
 
             <a
-              href="#"
+              href="https://github.com/Opemipo01-tech"
               className="social-card"
               target="_blank"
               rel="noopener noreferrer"
             >
 
               <div className="social-icon">
-                {/* GitHub Icon */}
+                  <img
+              src={Github}
+              alt="Github"
+            />
+
               </div>
 
               <div>
@@ -118,14 +136,18 @@ function Contact() {
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/in/ahmad-mahmud-69a65b345"
               className="social-card"
               target="_blank"
               rel="noopener noreferrer"
             >
 
               <div className="social-icon">
-                {/* LinkedIn Icon */}
+                 <img
+              src={LinkedIn}
+              alt="linkedIn"
+            />
+
               </div>
 
               <div>
@@ -141,14 +163,18 @@ function Contact() {
             </a>
 
             <a
-              href="#"
+              href="https://x.com/opemipo_001?s=11"
               className="social-card"
               target="_blank"
               rel="noopener noreferrer"
             >
 
               <div className="social-icon">
-                {/* X Icon */}
+                 <img
+              src={X}
+              alt="Twitter"
+            />
+
               </div>
 
               <div>
@@ -164,12 +190,16 @@ function Contact() {
             </a>
 
             <a
-              href="mailto:your@email.com"
+              href="mailto:ahmad21mahmud@gmail.com"
               className="social-card"
             >
 
               <div className="social-icon">
-                {/* Email Icon */}
+                 <img
+              src={Email}
+              alt="Mail"
+            />
+
               </div>
 
               <div>
@@ -177,7 +207,7 @@ function Contact() {
                 <h5>Email</h5>
 
                 <span>
-                  your@email.com
+                  ahmad21mahmud@gmail.com
                 </span>
 
               </div>

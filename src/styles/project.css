@@ -3,7 +3,7 @@
 ===================================================== */
 
 .projects{
-    padding:40px 0;
+    padding-top:50px;
 }
 
 .projects .container{
@@ -323,9 +323,10 @@
 
 }
 
-.project-buttons button{
+.project-buttons a{
 
     cursor:pointer;
+    text-decoration: none;
 
 }
 /* =====================================================
@@ -439,17 +440,21 @@
 
 }
 
-.card-buttons button{
+.card-buttons a{
 
     flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
     padding:.9rem;
 
     border-radius:999px;
 
-    border:none;
-
-    cursor:pointer;
+    text-decoration:none;
 
     font-weight:600;
 
@@ -457,7 +462,7 @@
 
 }
 
-.card-buttons button:first-child{
+.card-buttons a:first-child{
 
     background:#2563EB;
 
@@ -465,7 +470,7 @@
 
 }
 
-.card-buttons button:first-child:hover{
+.card-buttons a:first-child:hover{
 
     background:#1D4ED8;
 
@@ -473,7 +478,7 @@
 
 }
 
-.card-buttons button:last-child{
+.card-buttons a:last-child{
 
     background:#F8FAFC;
 
@@ -483,7 +488,7 @@
 
 }
 
-.card-buttons button:last-child:hover{
+.card-buttons a:last-child:hover{
 
     border-color:#2563EB;
 

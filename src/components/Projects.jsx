@@ -1,14 +1,11 @@
 import "../styles/project.css";
 
-// ==============================
-// Placeholder Images
-// Replace these with your screenshots later
-// ==============================
 
-import featuredImage from "../assets/react.svg";
-import projectOneImage from "../assets/react.svg";
-import projectTwoImage from "../assets/react.svg";
-import projectThreeImage from "../assets/react.svg";
+
+import featuredImage from "../assets/fakemart.png";
+import projectOneImage from "../assets/weather.png";
+import projectTwoImage from "../assets/memory-game.png";
+import projectThreeImage from "../assets/battleship.png";
 
 function Projects() {
   const featuredProject = {
@@ -43,17 +40,20 @@ function Projects() {
       image: projectOneImage,
 
       tech: [
-        "React",
-        "REST API",
+        "Javascript (ES6+)",
+        "Fetch API",
         "CSS",
       ],
+    demo: "https://opemipo01-tech.github.io/weather-app/",
+
+    github: "https://github.com/Opemipo01-tech/weather-app",
     },
 
     {
       title: "Memory Card Game",
 
       description:
-        "A React memory game that tests users by shuffling cards after every click.",
+        "An interactive memory game where players test their memory by selecting unique cards without repeating a previous choice. Cards are shuffled after every click to increase the challenge, with real-time score tracking.",
 
       image: projectTwoImage,
 
@@ -61,22 +61,27 @@ function Projects() {
         "React",
         "Hooks",
         "CSS",
+        "Giphy API",
       ],
+      demo: "https://memory-card-anime.vercel.app/",
+
+    github: "https://github.com/Opemipo01-tech/memory-card",
     },
 
     {
-      title: "Personal Portfolio",
+      title: "Battleship game",
 
       description:
-        "A modern developer portfolio showcasing projects, skills and experience.",
+        "A browser-based implementation of the classic Battleship game featuring intelligent game logic, ship placement, turn-based gameplay, and an interactive interface built entirely with vanilla JavaScript.",
 
       image: projectThreeImage,
 
       tech: [
-        "React",
-        "CSS",
-        "Responsive Design",
+        "javascript(ES6+)",
       ],
+    demo: "https://opemipo01-tech.github.io/battleship/",
+
+    github: "https://github.com/Opemipo01-tech/battleship",
     },
   ];
 
@@ -181,29 +186,26 @@ function Projects() {
 
             <div className="project-buttons">
 
-              <button className="primary-btn">
+              <a href="https://shopping-cart-eight-wine.vercel.app/" className="primary-btn"
+                  target="_blank"
+    rel="noopener noreferrer">
 
-                {/* Demo Icon */}
+          
 
                 Live Demo
 
-              </button>
+              </a>
 
-              <button className="secondary-btn">
+              <a href="https://github.com/Opemipo01-tech/shopping-cart" className="secondary-btn"
+                  target="_blank"
+    rel="noopener noreferrer">
 
-                {/* GitHub Icon */}
+           
 
                 GitHub
 
-              </button>
+              </a>
 
-              <button className="secondary-btn">
-
-                {/* Arrow Icon */}
-
-                Case Study
-
-              </button>
 
             </div>
 
@@ -255,21 +257,24 @@ function Projects() {
 
                 <div className="card-buttons">
 
-                  <button>
+          <a
+                 href={project.demo}
+               className="primary-btn"
+                 target="_blank"
+               rel="noopener noreferrer"
+          >
+        Demo
+        </a>
 
-                    {/* Demo Icon */}
+         <a
+            href={project.github}
+            className="secondary-btn"
+          target="_blank"
+             rel="noopener noreferrer"
+           >
+           GitHub
+           </a>
 
-                    Demo
-
-                  </button>
-
-                  <button>
-
-                    {/* GitHub Icon */}
-
-                    GitHub
-
-                  </button>
 
                 </div>
 

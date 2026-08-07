@@ -3,11 +3,17 @@ import "../styles/hero.css";
 import profileImage from "../assets/IMG_2405.jpg";
 
 function Hero() {
+   const scrollToSection = (id) => {
+  document.getElementById(id)?.scrollIntoView({
+    behavior: "smooth",
+  });
+};
+
   return (
     <section id="home" className="hero">
       <div className="container">
 
-        {/* LEFT */}
+      
 
         <div className="hero-content">
 
@@ -29,11 +35,13 @@ function Hero() {
 
           <div className="hero-buttons">
 
-            <button className="primary-btn">
+            <button className="primary-btn"
+             onClick={() => scrollToSection("projects")}>
               View Projects
             </button>
 
-            <button className="secondary-btn">
+            <button className="secondary-btn"
+             onClick={() => scrollToSection("contact")}>
               Contact Me
             </button>
 
@@ -53,7 +61,7 @@ function Hero() {
 
         </div>
 
-        {/* RIGHT */}
+    
 
         <div className="hero-image">
 
