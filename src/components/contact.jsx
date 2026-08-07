@@ -281,9 +281,6 @@ function Contact() {
             © 2026 Ahmad Mahmud. All rights reserved.
           </p>
 
-          <span>
-            Designed & Built with React
-          </span>
 
         </div>
 

@@ -620,6 +620,14 @@ font-size:2rem;
 padding:1.5rem;
 
 }
+.project-buttons a{
+    max-width: 200px;
+    align-self: center;
+}
+.card-buttons a{
+    max-width: 200px;
+    align-self: center;
+}
 
 .resume-section{
 

@@ -695,7 +695,9 @@ grid-template-columns:1fr;
 
 .contact-actions a{
 
-width:100%;
+max-width: 200px;
+height: 30px;
+align-self: center;
 
 }
 
