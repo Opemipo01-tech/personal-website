@@ -4,6 +4,7 @@
 
 .contact{
     padding:140px 0 0;
+    background:#FFF7D6;
 }
 
 .contact .container{
@@ -389,6 +390,7 @@
     padding-top:4rem;
 
     border-top:1px solid #E5E7EB;
+    background:#1F2937;
 
 }
 
@@ -412,7 +414,7 @@
 
     font-size:1.8rem;
 
-    color:#111827;
+    color:white;
 
     letter-spacing:-.03em;
 
@@ -422,7 +424,7 @@
 
     max-width:320px;
 
-    color:#64748B;
+    color:#D1D5DB;
 
     line-height:1.8;
 
@@ -440,7 +442,7 @@
 
 .footer-links a{
 
-    color:#64748B;
+    color:#D1D5DB;
 
     text-decoration:none;
 
@@ -451,8 +453,8 @@
 }
 
 .footer-links a:hover{
+  color:#F4B400;
 
-    color:#2563EB;
 
 }
 
@@ -517,13 +519,13 @@
 
     margin:0;
 
-    color:#64748B;
+    color:#9CA3AF;
 
 }
 
 .footer-bottom span{
 
-    color:#94A3B8;
+   color:#9CA3AF;
 
     font-size:.95rem;
 

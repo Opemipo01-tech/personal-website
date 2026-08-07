@@ -4,6 +4,8 @@
 
 .projects{
     padding-top:50px;
+    background:#d7ce7cc9;
+    border: 1px solid transparent;
 }
 
 .projects .container{
