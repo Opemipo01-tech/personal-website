@@ -1,101 +1,181 @@
 import "../styles/project.css";
 
-
-
+import chatterImage from "../assets/chatter.png";
 import featuredImage from "../assets/fakemart.png";
-import projectOneImage from "../assets/weather.png";
-import projectTwoImage from "../assets/memory-game.png";
-import projectThreeImage from "../assets/battleship.png";
+import weatherImage from "../assets/weather.png";
+import memoryImage from "../assets/memory-game.png";
+import battleshipImage from "../assets/battleship.png";
+import blogImage from "../assets/blog.png";
+import messengerImage from "../assets/messanger.png";
 
 function Projects() {
   const featuredProject = {
-    title: "FakeMart E-Commerce",
+    title: "Chatter",
     description:
-      "A modern e-commerce web application built with React featuring product browsing, shopping cart functionality, routing, and responsive UI.",
-
-    image: featuredImage,
+      "A full-stack social media application where users can create accounts, build profiles, create posts, interact with other users, follow people, and manage their social connections.",
+    image: chatterImage,
 
     tech: [
       "React",
-      "React Router",
-      "Context API",
-      "CSS",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Prisma",
+      "JWT",
     ],
 
     highlights: [
-      "Responsive Layout",
-      "Shopping Cart",
-      "Dynamic Routing",
-      "Reusable Components",
+      "User Authentication",
+      "Social Profiles",
+      "Posts & Interactions",
+      "Follow System",
     ],
+
+    demo: "https://chatter-gram.vercel.app/",
+    github: "https://github.com/Opemipo01-tech/chatter_gram",
   };
 
   const projects = [
     {
+      title: "FakeMart E-Commerce",
+
+      description:
+        "A React e-commerce application featuring product browsing, shopping cart functionality, dynamic routing, and a responsive user interface.",
+
+      image: featuredImage,
+
+      tech: [
+        "React",
+        "React Router",
+        "Context API",
+        "CSS",
+      ],
+
+      demo:
+        "https://shopping-cart-eight-wine.vercel.app/",
+
+      github:
+        "https://github.com/Opemipo01-tech/shopping-cart",
+    },
+
+    {
+      title: "Blog API",
+
+      description:
+        "A full-stack blogging application built around a REST API, allowing users to create, manage, and interact with blog content.",
+
+      image: blogImage,
+
+      tech: [
+        "React",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Prisma",
+      ],
+
+      demo: "https://blog-api-gules-theta.vercel.app/",
+
+      github: "https://github.com/Opemipo01-tech/blog-api",
+    },
+
+    {
+      title: "Messenger",
+
+      description:
+        "A real-time messaging application focused on user authentication, conversations, message handling, and building a responsive chat experience.",
+
+      image: messengerImage,
+
+      tech: [
+        "React",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+      ],
+
+      demo: "https://messenger-alpha-black.vercel.app/",
+
+      github: "https://github.com/Opemipo01-tech/messanger",
+    },
+
+    {
       title: "Weather Application",
 
       description:
-        "A weather application that fetches live weather data from an external API.",
+        "A responsive weather application that fetches real-time weather data from an external API and presents current conditions through a clean interface.",
 
-      image: projectOneImage,
+      image: weatherImage,
 
       tech: [
-        "Javascript (ES6+)",
+        "JavaScript",
         "Fetch API",
+        "REST API",
         "CSS",
       ],
-    demo: "https://opemipo01-tech.github.io/weather-app/",
 
-    github: "https://github.com/Opemipo01-tech/weather-app",
+      demo:
+        "https://opemipo01-tech.github.io/weather-app/",
+
+      github:
+        "https://github.com/Opemipo01-tech/weather-app",
     },
 
     {
       title: "Memory Card Game",
 
       description:
-        "An interactive memory game where players test their memory by selecting unique cards without repeating a previous choice. Cards are shuffled after every click to increase the challenge, with real-time score tracking.",
+        "An interactive memory game where players select unique cards without repeating previous choices. Cards are shuffled after every selection to increase the challenge.",
 
-      image: projectTwoImage,
+      image: memoryImage,
 
       tech: [
         "React",
-        "Hooks",
-        "CSS",
+        "React Hooks",
+        "JavaScript",
         "Giphy API",
       ],
-      demo: "https://memory-card-anime.vercel.app/",
 
-    github: "https://github.com/Opemipo01-tech/memory-card",
+      demo:
+        "https://memory-card-anime.vercel.app/",
+
+      github:
+        "https://github.com/Opemipo01-tech/memory-card",
     },
 
     {
-      title: "Battleship game",
+      title: "Battleship",
 
       description:
-        "A browser-based implementation of the classic Battleship game featuring intelligent game logic, ship placement, turn-based gameplay, and an interactive interface built entirely with vanilla JavaScript.",
+        "A browser-based implementation of the classic Battleship game featuring ship placement, turn-based gameplay, game logic, and an interactive interface.",
 
-      image: projectThreeImage,
+      image: battleshipImage,
 
       tech: [
-        "javascript(ES6+)",
+        "JavaScript",
+        "HTML",
+        "CSS",
       ],
-    demo: "https://opemipo01-tech.github.io/battleship/",
 
-    github: "https://github.com/Opemipo01-tech/battleship",
+      demo:
+        "https://opemipo01-tech.github.io/battleship/",
+
+      github:
+        "https://github.com/Opemipo01-tech/battleship",
     },
   ];
 
   return (
-    <section
-      id="projects"
-      className="projects"
-    >
+    <section id="projects" className="projects">
+
       <div className="container">
+
         {/* ===================================
-                SECTION HEADER
+                    SECTION HEADER
         ==================================== */}
 
         <div className="section-header">
+
           <span className="section-tag">
             FEATURED WORK
           </span>
@@ -106,20 +186,21 @@ function Projects() {
           </h2>
 
           <p>
-            Every project represents a step forward in my
-            learning journey—from frontend interfaces to
-            full-stack applications.
+            A selection of applications I've built while
+            developing my skills across frontend and
+            full-stack web development.
           </p>
+
         </div>
 
+
         {/* ===================================
-            FEATURED PROJECT
+                    FEATURED PROJECT
         ==================================== */}
 
         <div className="featured-project">
-          <div className="featured-image">
 
-            {/* Replace Placeholder */}
+          <div className="featured-image">
 
             <img
               src={featuredProject.image}
@@ -127,6 +208,7 @@ function Projects() {
             />
 
           </div>
+
 
           <div className="featured-content">
 
@@ -142,6 +224,7 @@ function Projects() {
               {featuredProject.description}
             </p>
 
+
             {/* Tech Stack */}
 
             <div className="tech-stack">
@@ -153,6 +236,7 @@ function Projects() {
               ))}
 
             </div>
+
 
             {/* Highlights */}
 
@@ -169,7 +253,7 @@ function Projects() {
                   <li key={item}>
 
                     <div className="highlight-icon">
-                      {/* Icon Placeholder */}
+                      {/* Add icon here */}
                     </div>
 
                     {item}
@@ -182,38 +266,42 @@ function Projects() {
 
             </div>
 
-            {/* Buttons */}
+
+            {/* Project Links */}
 
             <div className="project-buttons">
 
-              <a href="https://shopping-cart-eight-wine.vercel.app/" className="primary-btn"
-                  target="_blank"
-    rel="noopener noreferrer">
-
-          
+              <a
+                href={featuredProject.demo}
+                className="primary-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {/* Demo Icon */}
 
                 Live Demo
-
               </a>
 
-              <a href="https://github.com/Opemipo01-tech/shopping-cart" className="secondary-btn"
-                  target="_blank"
-    rel="noopener noreferrer">
-
-           
+              <a
+                href={featuredProject.github}
+                className="secondary-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {/* GitHub Icon */}
 
                 GitHub
-
               </a>
-
 
             </div>
 
           </div>
+
         </div>
 
+
         {/* ===================================
-            OTHER PROJECTS
+                    OTHER PROJECTS
         ==================================== */}
 
         <div className="projects-grid">
@@ -224,6 +312,9 @@ function Projects() {
               key={project.title}
               className="project-card"
             >
+
+              {/* Project Image */}
+
               <div className="project-image">
 
                 <img
@@ -232,6 +323,9 @@ function Projects() {
                 />
 
               </div>
+
+
+              {/* Project Information */}
 
               <div className="project-info">
 
@@ -242,6 +336,9 @@ function Projects() {
                 <p>
                   {project.description}
                 </p>
+
+
+                {/* Tech Stack */}
 
                 <div className="tech-stack">
 
@@ -255,38 +352,45 @@ function Projects() {
 
                 </div>
 
+
+                {/* Project Links */}
+
                 <div className="card-buttons">
 
-          <a
-                 href={project.demo}
-               className="primary-btn"
-                 target="_blank"
-               rel="noopener noreferrer"
-          >
-        Demo
-        </a>
+                  <a
+                    href={project.demo}
+                    className="primary-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {/* Demo Icon */}
 
-         <a
-            href={project.github}
-            className="secondary-btn"
-          target="_blank"
-             rel="noopener noreferrer"
-           >
-           GitHub
-           </a>
+                    Demo
+                  </a>
 
+                  <a
+                    href={project.github}
+                    className="secondary-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {/* GitHub Icon */}
+
+                    GitHub
+                  </a>
 
                 </div>
 
               </div>
+
             </article>
 
           ))}
 
         </div>
 
-
       </div>
+
     </section>
   );
 }

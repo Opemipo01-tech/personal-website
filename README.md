@@ -172,9 +172,9 @@ This project was built to:
 
 **Ahmad Mahmud**
 
-* Email: *[your-email@example.com](mailto:your-email@example.com)*
-* GitHub: *https://github.com/yourusername*
-* LinkedIn: *https://linkedin.com/in/yourusername*
+* Email: *ahmad21mahmud@gmail.com*
+* GitHub: *https://github.com/Opemipo01-tech*
+* LinkedIn: *https://www.linkedin.com/in/ahmad-mahmud-69a65b345*
 
 ## 📄 License
 

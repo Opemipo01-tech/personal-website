@@ -48,14 +48,12 @@ function Hero() {
           </div>
 
           <div className="hero-stack">
-
-            <span>React</span>
-
-            <span>Node.js</span>
-
-            <span>Express</span>
-
-            <span>PostgreSQL</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>Javascript</span>
+          <span>Node.js</span>
+          <span>express</span>
+          <span>postgreSQL</span>
 
           </div>
 
