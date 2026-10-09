@@ -77,7 +77,7 @@ function Contact() {
             </a>
 
             <a
-              href="https://flowcv.com/resume/cmtf3t6l54bb"
+              href="https://flowcv.com/resume/2veuhs932j4u"
               className="secondary-btn"
               target="_blank"
               rel="noopener noreferrer"
